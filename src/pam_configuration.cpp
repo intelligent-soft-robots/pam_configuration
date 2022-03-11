@@ -28,12 +28,17 @@ std::filesystem::path get_user_path()
 
 bool user_path_exists()
 {
+    try
     {
         std::filesystem::path p = get_user_path();
         if (std::filesystem::is_directory(p))
         {
             return true;
         }
+    }
+    catch (const std::runtime_error&)
+    {
+        return false;
     }
     return false;
 }
