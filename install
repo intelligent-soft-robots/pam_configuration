@@ -3,13 +3,45 @@
 # exit at first error
 set -e
 
+# parse command line options
+show_help()
+{
+>&2 cat << EOF
+Install PAM configuration files.
+
+Usage: ${0##*/} [--global]
+
+Options:
+  --global  Try to install globally even if not executed as root.
+EOF
+}
+while :; do
+    case $1 in
+        -h|--help)
+            show_help
+            exit
+            ;;
+        --global)
+            GLOBAL=1
+            ;;
+        ?*)
+            >&2 echo -e "ERROR: Invalid argument '$1'.\n"
+            show_help
+            exit 1
+            ;;
+        *) # Default case: No more options, so break out of the loop.
+            break
+    esac
+    shift
+done
+
 # where config folders will be copied
 GLOBAL_INSTALL=/opt/mpi-is/pam # if install called by root
 USER_INSTALL=$HOME/.mpi-is/pam # if install called by someone else
 
-# not same installation folder if script called
-# with or without sudo
-if [ "$EUID" -ne 0 ]
+# select installation folder based on arguments and user id (always install
+# globally when executed by root)
+if [ "$EUID" -ne 0 ] && [ -z "$GLOBAL" ]
 then
    # without sudo: user home directory
    INSTALL_DIR=$USER_INSTALL

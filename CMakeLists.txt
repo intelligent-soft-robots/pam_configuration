@@ -18,12 +18,20 @@ set(all_target_exports)
 # Configuration file installation #
 ###################################
 
+option(PAM_CONFIGURATION_INSTALL_GLOBALLY
+    "Always install globally independent of the user."
+)
+if (PAM_CONFIGURATION_INSTALL_GLOBALLY)
+    set(install_options "--global")
+else()
+    set(install_options "")
+endif()
+
 # calling the "install" script, which copy all
 # configuration files to either ~/.mpi-is or
 # /opt/mpi-is (if called by root)
-execute_process(COMMAND "bash"
+execute_process(COMMAND bash ./install ${install_options}
   WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-  INPUT_FILE install
   TIMEOUT 5
   RESULTS_VARIABLE install_results
   OUTPUT_VARIABLE install_stdout
