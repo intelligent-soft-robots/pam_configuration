@@ -8,7 +8,6 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(mpi_cmake_modules REQUIRED)
 find_package(pybind11 REQUIRED)
-find_package(cmake_always_do REQUIRED)
 
 # prepare to export all needed targets
 set(all_targets)
@@ -19,33 +18,23 @@ set(all_target_exports)
 # Configuration file installation #
 ###################################
 
-macro(INSTALL_CONFIG_FILES)
+# calling the "install" script, which copy all
+# configuration files to either ~/.mpi-is or
+# /opt/mpi-is (if called by root)
+execute_process(COMMAND "bash"
+  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+  INPUT_FILE install
+  TIMEOUT 5
+  RESULTS_VARIABLE install_results
+  OUTPUT_VARIABLE install_stdout
+  ERROR_VARIABLE install_stderr)
+if(${install_results} EQUAL 0)
+  message(STATUS "copied configuration files: ${install_stdout}")
+else()
+  message(FATAL_ERROR "failed to copy configuration files: ${install_stderr}")
+endif()
 
-  # calling the "install" script, which copy all
-  # configuration files to either ~/.mpi-is or
-  # /opt/mpi-is (if called by root)
-  execute_process(COMMAND "bash"
-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    INPUT_FILE install
-    TIMEOUT 5
-    RESULTS_VARIABLE install_results
-    OUTPUT_VARIABLE install_stdout
-    ERROR_VARIABLE install_stderr)
-  if(${install_results} EQUAL 0)
-    message(STATUS "copied configuration files: ${install_stdout}")
-  else()
-    message(FATAL_ERROR "failed to copy configuration files: ${install_stderr}")
-  endif()
 
-  # ensuring installation if always called, despite the cache.
-  # always_do is exported by the package cmake_always_do
-  ALWAYS_DO("installing pam configuration files")
-  
-endmacro()
-
-INSTALL_CONFIG_FILES()
-
-  
 ###########
 # Library #
 ###########
