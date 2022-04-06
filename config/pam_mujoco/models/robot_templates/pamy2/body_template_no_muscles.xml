@@ -1,5 +1,5 @@
 <robot>
-    <geom pos="0.015 0.0075 -0.51" name="?id?_frame" type="box" size="0.1 0.2 0.51" rgba=".35 .8 .4 1" solref="0.03 0.06"/>
+    <geom pos="0.0 0.0 0.0" name="?id?_frame" type="box" size="0.1 0.1 0.001" rgba=".35 .8 .4 1" solref="0.03 0.06"/>
     <body  name="?id?_arm">
       <body>
         <joint type="hinge" name="?id?_joint_base_rotation" axis="0 0 1"  frictionloss="114.0189"  solreffriction="0.5" solimpfriction="0.75294" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
