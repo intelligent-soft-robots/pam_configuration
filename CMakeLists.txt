@@ -5,9 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
 
 find_package(ament_cmake REQUIRED)
-find_package(ament_cmake_python REQUIRED)
 find_package(mpi_cmake_modules REQUIRED)
 find_package(pybind11 REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(cmake_always_do REQUIRED)
 
 # prepare to export all needed targets
@@ -78,8 +78,8 @@ target_include_directories(
   PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
          $<INSTALL_INTERFACE:include> SYSTEM
   PUBLIC ${PYTHON_INCLUDE_DIRS})
-get_python_install_dir(python_install_dir)
-install(TARGETS ${PROJECT_NAME}_cpp_bindings DESTINATION ${python_install_dir})
+_ament_cmake_python_get_python_install_dir()
+install(TARGETS ${PROJECT_NAME}_cpp_bindings DESTINATION ${PYTHON_INSTALL_DIR})
 
 
 ######################
