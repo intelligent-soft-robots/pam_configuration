@@ -8,7 +8,7 @@
     <include file="shared.xml"></include>
 
     <asset>
-        <include file="shared_asset.xml"></include>
+        <include file="shared_asset_sim.xml"></include>
 
         <texture name="texture:object" file="block.png" gridsize="3 4" gridlayout=".U..LFRB.D.."></texture>
         <texture name="texture:hidden" file="block_hidden.png" gridsize="3 4" gridlayout=".U..LFRB.D.."></texture>
@@ -24,12 +24,10 @@
 
         <include file="robot.xml"></include>
 
-        <body name="object" pos="1 0.87 0.2">
-            <geom name="object" type="ellipsoid" size="0.03 0.03 0.04" material="material:object" condim="4"></geom>
-            <geom name="object_hidden" type="ellipsoid" size="0.029 0.029 0.03" material="material:hidden" condim="4" contype="0" conaffinity="0" mass="0"></geom>
-            <site name="object:center" pos="0 0 0" rgba="1 0 0 0" size="0.01 0.01 0.01"></site>
-            <joint name="object:joint" type="free" damping="0.01"></joint>
-        </body>
+	<body pos="1 0.87 0.2" name="object">
+	  <geom name="object" type="sphere" size="0.04" rgba="None" pos="0 0 0" mass="0.0027"/>
+	  <joint type="free" name="object:joint"/>
+	</body>
         
         <light directional="true" ambient="0.2 0.2 0.2" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" castshadow="false" pos="0 1 4" dir="0 0 -1" name="light0"></light>
     </worldbody>
