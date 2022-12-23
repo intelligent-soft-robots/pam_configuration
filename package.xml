@@ -16,7 +16,7 @@
   <build_depend>cmake_always_do</build_depend>
 
   <depend>mpi_cmake_modules</depend>
-  <depend>pybind11_vendor</depend>
+  <depend>pybind11</depend>
   
   <export>
     <build_type>ament_cmake</build_type>
