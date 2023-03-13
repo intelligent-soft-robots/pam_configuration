@@ -34,8 +34,8 @@ PYBIND11_MODULE(pam_configuration, m)
     m.def(
         "get_path",
         []() { return get_path().string(); },
-        "returns the path (as string) to the user config folder (~/.mpi-is/pam) if "
-        "it exists, otherwise to the global "
-        "config folder (/opt/mpi-is/pam). If neither exists, raise a "
+        "returns the path (as string) to the user config folder "
+        "(~/.mpi-is/pam) if it exists, otherwise to the global config folder "
+        "(/opt/mpi-is/pam). If neither exists, raise a "
         "PamConfigurationNotFoundError");
 }
