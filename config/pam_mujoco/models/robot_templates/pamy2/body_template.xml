@@ -137,7 +137,7 @@
         <site name="?id?_tendon_3_4_side_opposite_to_muscle" pos="0 0 0.0371"  type="sphere" size=".01 0 0" rgba="1 0 0 0" />
         <site name="?id?_tendon_5_base_rot_point_of_contact" pos="-0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
         <site name="?id?_tendon_6_base_rot_point_of_contact" pos="0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-	<body pos="0 0 0.36742">
+        <body pos="0 0 0.36742">
           <geom name="?id?_dummy_cylinder_for_tendon_wrapping_3" type = "cylinder" size="0.037 0.01" zaxis="0 1 0" rgba="1 0 0 0" mass="0.000001"/>
           <joint type="hinge" name="?id?_dof3" axis="0 1 0"  frictionloss="7.7682"  solreffriction="0.5" solimpfriction="0.65914" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
           <geom type = "mesh" mesh="igus_move" rgba = "0.20 0.20 0.20 1.0" zaxis="0 0 -1" pos = "-0.04 0.0366 0.065" mass="0.03"/>
@@ -147,7 +147,7 @@
           <site name="?id?_tendon_7_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
           <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
           <body pos="0 0 -0.395">
-	    <geom name="?id?_dummy_cylinder_for_tendon_wrapping_4" type = "cylinder" size="0.037 0.01" rgba="1 0 0 0" mass="0.000001"/>
+            <geom name="?id?_dummy_cylinder_for_tendon_wrapping_4" type = "cylinder" size="0.037 0.01" rgba="1 0 0 0" mass="0.000001"/>
             <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="111.9529"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
             <geom type = "cylinder" size="0.013 0.105" pos="0 0 0.54" zaxis="0 0 1" rgba="0.95 0.95 0.95 1.0" mass="0.11402"/>
             <geom name="?id?_racket_handle" type = "mesh" mesh="schlaeger_anbindung-igus_anbindung_extra-1" rgba="0.99 0.99 0.99 1" zaxis = "0 -1 0" pos ="-0.075 0.016 0.615"  mass="0.02"/>
