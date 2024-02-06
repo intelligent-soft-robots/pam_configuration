@@ -4,22 +4,22 @@
     <inertial pos="0.00014182603956811 -0.000217286489393455 -0.00245784885203652" mass="1.27071929199471" fullinertia="0.00567536540229646 0.00316590205030147 0.00872411416268657 -3.34745090158655E-05 9.94071247612805E-09 5.24827445642418E-08"/>
     <geom name="?id?_frame" type="mesh" mesh="Base" rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" mass="0"/>
     <!-- J1 -->
-    <body pos="0 0 0.01" euler="180 0 0">
-      <joint type="hinge" name="?id?_joint_base_rotation" axis="0 0 1"  frictionloss="114.0189"  solreffriction="0.5" solimpfriction="0.75294" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
+    <body pos="0 0 0.01" euler="180 0 0">  <!-- was: euler="180 0 0"-->
+      <joint type="hinge" name="?id?_joint_base_rotation" axis="0 0 -1"  frictionloss="114.0189"  solreffriction="0.5" solimpfriction="0.75294" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
       <inertial pos="0.000130781333923981 0.000395087107960899 -2.30204502387789E-05" mass="0.884595751651612" fullinertia="0.000957184766492343 0.000943127481202976 0.00166205903985012 7.26525656006142E-08 2.16679898461153E-07 -2.0945043536217E-07"/>
       <geom type="mesh" mesh="J1" rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" mass="0"/>
       <!-- J2 -->
-      <body pos="0 0 -0.064" euler="180 0 -180">
+      <body pos="0 0 -0.064" euler="180 0 180">    <!-- was: euler="180 0 -180"-->
         <inertial pos="-0.00318822226425911 -0.00156350715458152 0.187131602669781" mass="0.747221805509099" fullinertia="0.00183751261065788 0.00194288763095422 0.000201104761524309 9.36914048087975E-07 2.8551485268662E-05 4.04806959268614E-06"/>
         <geom type="mesh" mesh="J2" rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" mass="0"/>
-        <joint type="hinge" name="?id?_dof2" axis="0 1 0" frictionloss="111.0899" solreffriction="0.075396" solimpfriction="0.65317" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
+        <joint type="hinge" name="?id?_dof2" axis="0 -1 0" frictionloss="111.0899" solreffriction="0.075396" solimpfriction="0.65317" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
         <!-- J3 -->
-        <body pos="-0.0069795 0 0.39986" euler="180 0 -180">
-              <joint type="hinge" name="?id?_dof3" axis="0 1 0"  frictionloss="7.7682"  solreffriction="0.5" solimpfriction="0.65914" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
+        <body pos="-0.0069795 0 0.39986" euler="180 0 180">
+              <joint type="hinge" name="?id?_dof3" axis="0 -1 0"  frictionloss="7.7682"  solreffriction="0.5" solimpfriction="0.65914" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
               <inertial pos="0.000476084514538831 -0.00627422416764544 -0.0180864211606709" mass="0.310581849393537" fullinertia="0.000170712877571993 0.00023028333846519 9.14283413127416E-05 6.39009188619916E-08 2.17211789062173E-06 -1.54349521030329E-06"/>
               <geom type="mesh" mesh="J3" rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" mass="0"/>
               <!-- J4 -->
-              <body euler="-180 -1 0">
+              <body euler="180 0 0">   <!-- was: euler="-180 -1 0"-->
                   <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="111.9529"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
                   <geom type="mesh" mesh="J4" rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" mass="0"/>
                   <inertial pos="-7.76532889874594E-05 0.000224318522056323 0.278462053726287" mass="0.538421831235413" fullinertia="0.00115973040414782 0.00165716877599009 0.000528448429186829 1.77245727732792E-08 1.36310388287712E-08 6.87618492418858E-08"/>
