@@ -1,31 +1,30 @@
 {
     "control_period": -1,
     "max_pressures_ago": [
+        23000,
         22000,
-        21000,
-        24000,
+        25000,
         20500
     ],
     "max_pressures_antago": [
+        23000,
         22000,
-        21000,
-        24000,
+        25000,
         20500
     ],
     "min_pressures_ago": [
-        12000,
+        11000,
         16000,
-        13000,
-        12500
+        11500,
+        12000
     ],
     "min_pressures_antago": [
-        12500,
+        11500,
         16300,
-        13000,
-        12500
+        11500,
+        12000
     ],
     "nb_dofs": 4,
     "sensor_period": -1,
     "server_frequency": -1
 }
-
