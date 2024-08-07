@@ -1,13 +1,13 @@
 {
     "control_period": -1,
     "max_pressures_ago": [
-        26000,
+        26500,
         22000,
         24500,
         23000
     ],
     "max_pressures_antago": [
-        26000,
+        26500,
         22000,
         25000,
         23000
