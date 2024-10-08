@@ -115,8 +115,8 @@
   <body name="?id?_arm">
     <inertial pos="0.00014182603956811 -0.000217286489393455 -0.00245784885203652" mass="1.27071929199471" fullinertia="0.00567536540229646 0.00316590205030147 0.00872411416268657 -3.34745090158655E-05 9.94071247612805E-09 5.24827445642418E-08"/>
     <geom name="?id?_frame" type="mesh" mesh="Base" rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" mass="0"/>
-    <site name="?id?_tendon_1_base_rot_point_of_contact" pos="0.0 -0.0371 -0.01" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-    <site name="?id?_tendon_2_base_rot_point_of_contact" pos="0.0 0.0371 -0.01" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+    <site name="?id?_tendon_1_base_rot_point_of_contact" pos="0.0 0.0371 -0.01" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+    <site name="?id?_tendon_2_base_rot_point_of_contact" pos="0.0 -0.0371 -0.01" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
      <!-- J1 -->
     <body pos="0 0 0.01" euler="180 0 0">
       <joint type="hinge" name="?id?_joint_base_rotation" axis="0 0 1"  frictionloss="114.0189"  solreffriction="0.5" solimpfriction="0.75294" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
@@ -124,11 +124,11 @@
       <geom type="mesh" mesh="J1" rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" mass="0"/>
       <body euler="-180 0 0">
         <geom name="?id?_dummy_cylinder_for_tendon_wrapping_1" type = "cylinder" size="0.037 0.01" pos = "0 0 0.01" rgba="1 0 0 0" mass="0.000001"/>
-        <site name="?id?_tendon_1_base_rot_connection" pos="0.0 -0.0371 0.01" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
-        <site name="?id?_tendon_2_base_rot_connection" pos="0.0 0.0371 0.01" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
+        <site name="?id?_tendon_1_base_rot_connection" pos="0.0 0.0371 0.01" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
+        <site name="?id?_tendon_2_base_rot_connection" pos="0.0 -0.0371 0.01" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
         <site name="?id?_tendon_1_2_side_opposite_to_muscle" pos="0.0371 0.0 0.01"  type="sphere" size=".01 0 0" rgba="1 0 0 0" />
-        <site name="?id?_tendon_3_base_rot_point_of_contact" pos="-0.0371 0 0.075" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-        <site name="?id?_tendon_4_base_rot_point_of_contact" pos="0.0371 0 0.075" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+        <site name="?id?_tendon_3_base_rot_point_of_contact" pos="0.0371 0 0.075" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+        <site name="?id?_tendon_4_base_rot_point_of_contact" pos="-0.0371 0 0.075" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
       </body>
       <!-- J2 -->
       <body pos="0 0 -0.064" euler="180 0 -180">
@@ -137,22 +137,22 @@
         <joint type="hinge" name="?id?_dof2" axis="0 1 0" frictionloss="111.0899" solreffriction="0.075396" solimpfriction="0.65317" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
         <geom name="?id?_dummy_cylinder_for_tendon_wrapping_2" type = "cylinder" pos="0 0.0 0.0" size="0.037 0.01" zaxis="0 1 0" rgba="1 0 0 0" mass="0.000001"/>
         <site name="?id?_center_joint_1_2" type="sphere" size=".04 0 0" rgba="1 0 1 0.2"/>
-        <site name="?id?_tendon_3_base_rot_connection" pos="-0.0371 0 0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
-        <site name="?id?_tendon_4_base_rot_connection" pos="0.0371 0 0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
+        <site name="?id?_tendon_3_base_rot_connection" pos="0.0371 0 0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
+        <site name="?id?_tendon_4_base_rot_connection" pos="-0.0371 0 0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
         <site name="?id?_tendon_3_4_side_opposite_to_muscle" pos="0 0 0.0371"  type="sphere" size=".01 0 0" rgba="1 0 0 0" />
-        <site name="?id?_tendon_5_base_rot_point_of_contact" pos="-0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-        <site name="?id?_tendon_6_base_rot_point_of_contact" pos="0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+        <site name="?id?_tendon_5_base_rot_point_of_contact" pos="0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+        <site name="?id?_tendon_6_base_rot_point_of_contact" pos="-0.0371 0 0.36742" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
         <!-- J3 -->
         <body pos="-0.0069795 0 0.39986" euler="180 0 -180">
           <joint type="hinge" name="?id?_dof3" axis="0 1 0"  frictionloss="7.7682"  solreffriction="0.5" solimpfriction="0.65914" limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
           <inertial pos="0.000476084514538831 -0.00627422416764544 -0.0180864211606709" mass="0.310581849393537" fullinertia="0.000170712877571993 0.00023028333846519 9.14283413127416E-05 6.39009188619916E-08 2.17211789062173E-06 -1.54349521030329E-06"/>
           <geom type="mesh" mesh="J3" rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" mass="0"/>
           <geom name="?id?_dummy_cylinder_for_tendon_wrapping_3" type = "cylinder" size="0.037 0.01" zaxis="0 1 0" rgba="1 0 0 0" mass="0.000001"/>
-          <site name="?id?_tendon_5_base_rot_connection" pos="-0.0371 0 0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
-          <site name="?id?_tendon_6_base_rot_connection" pos="0.0371 0 0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
+          <site name="?id?_tendon_5_base_rot_connection" pos="0.0371 0 0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
+          <site name="?id?_tendon_6_base_rot_connection" pos="-0.0371 0 0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
           <site name="?id?_tendon_5_6_side_opposite_to_muscle" pos="0.0 0.0 0.0371"  type="sphere" size=".01 0 0" rgba="1 0 0 0" />
-          <site name="?id?_tendon_7_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-          <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+          <site name="?id?_tendon_7_base_rot_point_of_contact" pos="0 0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+          <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
           <!-- J4 -->
           <body euler="-180 -1 0">
             <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="111.9529"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-89.8 89.8" solreflimit="0.003" solimplimit="1"/>
@@ -161,8 +161,8 @@
             <geom name="?id?_racket" type = "mesh" mesh="schlaeger_anbindung-Tischtennisschlaeger_Butterfly-1" rgba="0.7 0.05 0.05 1" pos="-0.075 0.057 0.211" zaxis = "0 -1 0" mass="0.66342"/>
             <geom name="?id?_dummy_cylinder_for_tendon_wrapping_4" type = "cylinder" size="0.037 0.01" rgba="1 0 0 0" mass="0.000001"/>
             <site name="?id?_center_joint_3_4" pos="0 0 0.0" type="sphere" size=".04 0 0" rgba="1 0 1 0.2"/>
-            <site name="?id?_tendon_7_base_rot_connection" pos="0 -0.0371 0.0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
-            <site name="?id?_tendon_8_base_rot_connection" pos="0 0.0371 0.0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
+            <site name="?id?_tendon_7_base_rot_connection" pos="0 0.0371 0.0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
+            <site name="?id?_tendon_8_base_rot_connection" pos="0 -0.0371 0.0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
             <site name="?id?_tendon_7_8_side_opposite_to_muscle" pos="0.0371 0.0 0.0"  type="sphere" size=".01 0 0" rgba="1 0 0 0.2" />
           </body>
         </body>
