@@ -31,12 +31,12 @@
     <geom type="box" size=".001 .001 .001" rgba="0.5 0.5 0.5 0"/>
     <joint type="slide" name="?id?_dummy_joint_activation_8" range="-10 10" axis="1 0 0" limited="false"/>
   </body>
-  <body pos="-0.5 -0.037 0.014" name="?id?_muscle_1_moving_end">
+  <body pos="-0.5 0.037 0.014" name="?id?_muscle_1_moving_end">
     <joint type="slide" name="?id?_joint_muscle_1" axis="1 0 0" frictionloss = "1000"/>
     <geom type="sphere" size=".03" rgba="0 1 0.5 0.0"/>
     <site name="?id?_muscle_1_moving_end" pos="0.0 0.0 0.0" type="sphere" size=".03 0 0" rgba="0 0 0 0"/>
   </body>
-  <body pos="-0.5 0.037 0.014" name="?id?_muscle_2_moving_end">
+  <body pos="-0.5 -0.037 0.014" name="?id?_muscle_2_moving_end">
     <joint type="slide" name="?id?_joint_muscle_2" axis="1 0 0" frictionloss = "1000"/>
     <geom type="sphere" size=".03" rgba="0 1 0.5 0.0"/>
     <site name="?id?_muscle_2_moving_end" pos="0.0 0.0 0.0" type="sphere" size=".03 0 0"  rgba="0 0 0 0"/>
@@ -71,11 +71,11 @@
     <geom type="sphere" size=".03" rgba="0 1 0.5 0.0"/>
     <site name="?id?_muscle_8_moving_end" pos="0.0 0.0 0.0" type="sphere" size=".03 0 0"  rgba="0 0 0 0"/>
   </body>
-  <body pos="-1.5 -0.037 0.014" name="?id?_muscle_1_fixed_end">
+  <body pos="-1.5 0.037 0.014" name="?id?_muscle_1_fixed_end">
     <geom type="box" size=".03 .04 .03" rgba="0.5 0.5 0.5 0.2"/>
     <site name="?id?_muscle_1_fixed_end" pos="0.0 0.0 0.0" type="sphere" size=".03 0 0"  rgba="0 0 0 0"/>
   </body>
-  <body pos="-1.5 0.037 0.014" name="?id?_muscle_2_fixed_end">
+  <body pos="-1.5 -0.037 0.014" name="?id?_muscle_2_fixed_end">
     <geom type="box" size=".03 .04 .03" rgba="0.5 0.5 0.5 0.2"/>
     <site name="?id?_muscle_2_fixed_end" pos="0.0 0.0 0.0" type="sphere" size=".03 0 0"  rgba="0 0 0 0"/>
   </body>
