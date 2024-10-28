@@ -1,7 +1,7 @@
 [transform]
-translation = [0.385887, 0.185144, -0.425765]
+translation = [0.387931, -0.292942, -0.515048]
 # extrinsic xyz Euler angles
-rotation = [0.00499201, -0.0156143, -0.0121934]
+rotation = [-0.00820371, -0.00340223, -0.000676185]
 [server]
 hostname = "rodau"
 port = 7660
