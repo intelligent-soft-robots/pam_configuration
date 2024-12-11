@@ -34,7 +34,7 @@
       <geom geom="?id?_dummy_cylinder_for_tendon_wrapping_2"/>
       <site site="?id?_tendon_3_base_rot_connection"/>
     </spatial>
-    <spatial name = "?id?_tendon_5" width="0.001" rgba="0.7 0.4 0.4 0.2" limited="true" range="0.0 1.293" damping="418.6191" solreflimit="0.005" solimplimit="1" stiffness="218205.4346">
+    <spatial name = "?id?_tendon_5" width="0.001" rgba="0.7 0.4 0.4 0.2" limited="true" range="0.0 1.393" damping="418.6191" solreflimit="0.005" solimplimit="1" stiffness="218205.4346">
       <site site="?id?_muscle_5_moving_end"/>
       <site site="?id?_muscle_5_tendon_horizontal_point"/>
       <site site="?id?_center_joint_1_2"/>
@@ -45,7 +45,7 @@
       <geom geom="?id?_dummy_cylinder_for_tendon_wrapping_3"/> 
       <site site="?id?_tendon_6_base_rot_connection"/>
     </spatial>
-    <spatial name = "?id?_tendon_6" width="0.001" rgba="0.7 0.4 0.4 0.2" limited="true" range="0.0 1.367" damping="418.6191" solreflimit="0.005" solimplimit="1" stiffness="218205.4346">
+    <spatial name = "?id?_tendon_6" width="0.001" rgba="0.7 0.4 0.4 0.2" limited="true" range="0.0 1.467" damping="418.6191" solreflimit="0.005" solimplimit="1" stiffness="218205.4346">
       <site site="?id?_muscle_6_moving_end"/>
       <site site="?id?_muscle_6_tendon_horizontal_point"/>
       <site site="?id?_center_joint_1_2"/>
