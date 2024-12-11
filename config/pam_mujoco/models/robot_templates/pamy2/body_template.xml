@@ -151,8 +151,8 @@
           <site name="?id?_tendon_5_base_rot_connection" pos="0.0371 0 0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
           <site name="?id?_tendon_6_base_rot_connection" pos="-0.0371 0 0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
           <site name="?id?_tendon_5_6_side_opposite_to_muscle" pos="0.0 0.0 0.0371"  type="sphere" size=".01 0 0" rgba="1 0 0 0" />
-          <site name="?id?_tendon_7_base_rot_point_of_contact" pos="0 0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
-          <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+          <site name="?id?_tendon_7_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
+          <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
           <!-- J4 -->
           <body euler="180 0 0">
             <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="27.7682"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-85.0 85.0" solreflimit="0.003" solimplimit="1"/>
@@ -161,8 +161,8 @@
             <geom name="?id?_racket" type = "mesh" mesh="schlaeger_anbindung-Tischtennisschlaeger_Butterfly-1" rgba="0.7 0.05 0.05 1" pos="-0.075 0.057 0.211" zaxis = "0 -1 0" mass="0.66342"/>
             <geom name="?id?_dummy_cylinder_for_tendon_wrapping_4" type = "cylinder" size="0.037 0.01" rgba="1 0 0 0" mass="0.000001"/>
             <site name="?id?_center_joint_3_4" pos="0 0 0.0" type="sphere" size=".04 0 0" rgba="1 0 1 0.2"/>
-            <site name="?id?_tendon_7_base_rot_connection" pos="0 0.0371 0.0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
-            <site name="?id?_tendon_8_base_rot_connection" pos="0 -0.0371 0.0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
+            <site name="?id?_tendon_7_base_rot_connection" pos="0 -0.0371 0.0" type="sphere" size=".01 0 0" rgba="1 0 0 0"/>
+            <site name="?id?_tendon_8_base_rot_connection" pos="0 0.0371 0.0" type="sphere" size=".01 0 0" rgba="0 1 0 0"/>
             <site name="?id?_tendon_7_8_side_opposite_to_muscle" pos="0.0371 0.0 0.0"  type="sphere" size=".01 0 0" rgba="1 0 0 0.2" />
           </body>
         </body>
