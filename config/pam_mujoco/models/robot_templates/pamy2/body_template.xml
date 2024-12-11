@@ -155,7 +155,7 @@
           <site name="?id?_tendon_8_base_rot_point_of_contact" pos="0 -0.0371 0" type="sphere" size=".02 0 0" rgba="1 1 1 0"/>
           <!-- J4 -->
           <body euler="-180 0 0">
-            <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="111.9529"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-85.0 85.0" solreflimit="0.003" solimplimit="1"/>
+            <joint type="hinge" name="?id?_dof4" axis="0 0 1" pos="0 0 0"  frictionloss="27.7682"  solreffriction="0.38711" solimpfriction="2.5699"  limited="true" range="-85.0 85.0" solreflimit="0.003" solimplimit="1"/>
             <geom type="mesh" mesh="J4" rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" mass="0"/>
             <inertial pos="-7.76532889874594E-05 0.000224318522056323 0.278462053726287" mass="0.538421831235413" fullinertia="0.00115973040414782 0.00165716877599009 0.000528448429186829 1.77245727732792E-08 1.36310388287712E-08 6.87618492418858E-08"/>
             <geom name="?id?_racket" type = "mesh" mesh="schlaeger_anbindung-Tischtennisschlaeger_Butterfly-1" rgba="0.7 0.05 0.05 1" pos="-0.075 0.057 0.211" zaxis = "0 -1 0" mass="0.66342"/>
