@@ -1,5 +1,5 @@
 <mujoco>
-  <compiler coordinate="local" meshdir="$models_path$/igus/" angle="degree"/>
+  <compiler coordinate="local" meshdir="$models_path$/mesh/" angle="degree"/>
   <size njmax="6000" nconmax="6000"/>
   <option gravity="0 0 -9.81" integrator="RK4" timestep="$timestep$"  density="1.2" collision="predefined">
     <flag gravity="enable" contact="enable" passive="enable"/>
@@ -13,7 +13,12 @@
         <mesh file="igus_base_move.stl" scale="0.001 0.001 0.001"/>
         <mesh file="igus_move.stl" scale="0.001 0.001 0.001"/>
         <mesh file="schlaeger_anbindung-igus_anbindung_extra-1.stl" scale="0.001 0.001 0.001"/>
-        <mesh file="schlaeger_anbindung-Tischtennisschlaeger_Butterfly-1.stl" scale="0.001 0.001 0.001"/>
+        <mesh file="schlaeger_anbindung-Tischtennisschlaeger_Butterfly-1.stl" scale="0.001 0.001 0.0035"/>
+        <mesh file="Base.stl" scale="1.0 1.0 1.0"/>
+        <mesh file="J1.stl" scale="1.0 1.0 1.0"/>
+        <mesh file="J2.stl" scale="1.0 1.0 1.0"/>
+        <mesh file="J3.stl" scale="1.0 1.0 1.0"/>
+        <mesh file="J4.stl" scale="1.0 1.0 1.0"/>
   </asset>
   <worldbody>
     <light diffuse="1.5 1.5 1.5" pos="0 0 8.0" dir="0 0 -1"/>
